@@ -1,3 +1,40 @@
 <resources>
     <string name="app_name">ABC-app</string>
+
+    //app strings titles
+    <string name="title_apple">Apple</string>
+    <string name="title_avocado">Avocado</string>
+    <string name="title_apricot">Apricot</string>
+    <string name="title_banana">Banana</string>
+    <string name="title_blueberry">Blueberry</string>
+    <string name="title_blackberry">Blackberry</string>
+    <string name="title_beachplum">Beach Plum</string>
+    <string name="title_cherry">Cherry</string>
+    <string name="title_coconut">Coconut</string>
+    <string name="title_cranberry">Cranberry</string>
+    <string name="title_carrot">Carrot</string>
+    <string name="title_cantaloupe">Cantaloupe</string>
+
+    //app strings subtitles
+    <string name="subtitle_apple">Subtitle of Apple</string>
+    <string name="subtitle_avocado">Subtitle of Avocado</string>
+    <string name="subtitle_apricot">Subtitle of Apricot</string>
+    <string name="subtitle_banana">Subtitle of Banana</string>
+    <string name="subtitle_blueberry">Subtitle of Blueberry</string>
+    <string name="subtitle_blackberry">Subtitle of Blackberry</string>
+    <string name="subtitle_beachplum">Subtitle of Beach Plum</string>
+    <string name="subtitle_cherry">Subtitle of Cherry</string>
+    <string name="subtitle_coconut">Subtitle of Coconut</string>
+    <string name="subtitle_cranberry">Subtitle of Cranberry</string>
+    <string name="subtitle_carrot">Subtitle of Carrot</string>
+    <string name="subtitle_cantaloupe">Subtitle of Cantaloupe</string>
+
+    //edittext
+    <string name="hint_search">Search</string>
+
+    //Textview
+    <string name="text_stats">Statistics will appear here</string>
+    <string name="text_list_item_title">List item title</string>
+    <string name="text_list_item_subtitle">List item subtitle</string>
+
 </resources>

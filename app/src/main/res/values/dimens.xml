@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Paddings -->
+    <dimen name="padding_zero">0dp</dimen>
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin_zero">0dp</dimen>
+    <dimen name="margin_extra_small">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+
+    <!-- Heights -->
+    <dimen name="height_zero">0dp</dimen>
+    <dimen name="height_small">8dp</dimen>
+    <dimen name="height_medium">16dp</dimen>
+    <dimen name="height_large">24dp</dimen>
+    <dimen name="height_viewpager">180dp</dimen>
+
+    <!-- widths -->
+    <dimen name="width_zero">0dp</dimen>
+    <dimen name="width_one">1dp</dimen>
+    <dimen name="width_small">8dp</dimen>
+    <dimen name="width_medium">16dp</dimen>
+    <dimen name="width_large">24dp</dimen>
+
+    <!-- Image sizes -->
+    <dimen name="image_size_small">40dp</dimen>
+    <dimen name="image_size_medium">50dp</dimen>
+    <dimen name="image_size_large">60dp</dimen>
+
+    <!-- shape -->
+    <dimen name="radius_small">12dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_extra_large">24sp</dimen>
+
+</resources>

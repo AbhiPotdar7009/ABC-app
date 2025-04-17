@@ -1,7 +1,6 @@
 package com.example.abc_app.ui.activity
 
 import android.os.Bundle
-import android.view.ViewGroup
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
@@ -39,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         // Setup Carousel
         val carouselAdapter = CarouselAdapter(carouselData)
         binding.carouselViewPager.adapter = carouselAdapter
-        TabLayoutMediator(binding.carouselIndicator, binding.carouselViewPager) { tabLayout , _ ->
+        TabLayoutMediator(binding.carouselIndicator, binding.carouselViewPager) { tabLayout, _ ->
             tabLayout.setCustomView(R.layout.custom_tab_dot)
         }.attach()
 

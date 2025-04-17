@@ -1,28 +1,81 @@
 package com.example.abc_app.domain.usecase
 
+import android.content.Context
 import com.example.abc_app.R
 import com.example.abc_app.domain.model.ListItem
+import dagger.hilt.android.qualifiers.ApplicationContext
+import javax.inject.Inject
 
-class GetListItemsUseCase {
+class GetListItemsUseCase @Inject constructor(
+    @ApplicationContext private val context: Context
+) {
 
     private val _listDataMap = listOf(
         listOf(
-            ListItem("Apple", "Subtitle of Apple", R.drawable.apple),
-            ListItem("Avocado", "Subtitle of Avocado", R.drawable.avocado),
-            ListItem("Apricot", "Subtitle of Apricot", R.drawable.apricot)
+            ListItem(
+                context.getString(R.string.title_apple),
+                context.getString(R.string.subtitle_apple),
+                R.drawable.apple
+            ),
+            ListItem(
+                context.getString(R.string.title_avocado),
+                context.getString(R.string.subtitle_avocado),
+                R.drawable.avocado
+            ),
+            ListItem(
+                context.getString(R.string.title_apricot),
+                context.getString(R.string.subtitle_apricot),
+                R.drawable.apricot
+            )
         ),
         listOf(
-            ListItem("Banana", "Subtitle of Banana", R.drawable.banana),
-            ListItem("Blueberry", "Subtitle of Blueberry", R.drawable.blueberry),
-            ListItem("Blackberry", "Subtitle of Blackberry", R.drawable.blackberry),
-            ListItem("Beach Plum", "Subtitle of Beach Plum", R.drawable.beachplum)
+            ListItem(
+                context.getString(R.string.title_banana),
+                context.getString(R.string.subtitle_banana),
+                R.drawable.banana
+            ),
+            ListItem(
+                context.getString(R.string.title_blueberry),
+                context.getString(R.string.subtitle_blueberry),
+                R.drawable.blueberry
+            ),
+            ListItem(
+                context.getString(R.string.title_blackberry),
+                context.getString(R.string.subtitle_blackberry),
+                R.drawable.blackberry
+            ),
+            ListItem(
+                context.getString(R.string.title_beachplum),
+                context.getString(R.string.subtitle_beachplum),
+                R.drawable.beachplum
+            )
         ),
         listOf(
-            ListItem("Cherry", "Subtitle of Cherry", R.drawable.cherry),
-            ListItem("Coconut", "Subtitle of Coconut", R.drawable.coconut),
-            ListItem("Cranberry", "Subtitle of Cranberry", R.drawable.cranberry),
-            ListItem("Carrot", "Subtitle of Carrot", R.drawable.carrot),
-            ListItem("Cantaloupe", "Subtitle of Cantaloupe", R.drawable.cantaloupe)
+            ListItem(
+                context.getString(R.string.title_cherry),
+                context.getString(R.string.subtitle_cherry),
+                R.drawable.cherry
+            ),
+            ListItem(
+                context.getString(R.string.title_coconut),
+                context.getString(R.string.subtitle_coconut),
+                R.drawable.coconut
+            ),
+            ListItem(
+                context.getString(R.string.title_cranberry),
+                context.getString(R.string.subtitle_cranberry),
+                R.drawable.cranberry
+            ),
+            ListItem(
+                context.getString(R.string.title_carrot),
+                context.getString(R.string.subtitle_carrot),
+                R.drawable.carrot
+            ),
+            ListItem(
+                context.getString(R.string.title_cantaloupe),
+                context.getString(R.string.subtitle_cantaloupe),
+                R.drawable.cantaloupe
+            )
         )
     )
 
