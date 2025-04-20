@@ -1,6 +1,7 @@
 package com.example.abc_app.ui.activity
 
 import android.os.Bundle
+import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
@@ -62,8 +63,20 @@ class MainActivity : AppCompatActivity() {
         })
 
         // Search functionality
-        binding.searchBar.addTextChangedListener {
-            viewModel.search(it.toString())
+        binding.searchBar.addTextChangedListener { editable ->
+            val text = editable?.toString() ?: ""
+
+            if (text.isNotEmpty()) {
+                // User typing -> hide ViewPager and TabLayout
+                binding.carouselViewPager.visibility = View.GONE
+                binding.carouselIndicator.visibility = View.GONE
+            } else {
+                // User cleared -> show ViewPager and TabLayout
+                binding.carouselViewPager.visibility = View.VISIBLE
+                binding.carouselIndicator.visibility = View.VISIBLE
+            }
+
+            viewModel.search(text)
         }
 
         //Show bottom sheet
